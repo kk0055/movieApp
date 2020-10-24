@@ -14,6 +14,7 @@ class ViewMoviesTest extends TestCase
      */
     public function the_main_page_shows_correct_info()
     {
-        $response = $this->get(route('movies.index'));
+      
+       
     }
 }

@@ -33,7 +33,7 @@ class MoviesController extends Controller
     
     return [$genre['id'] => $genre['name']];
    });
-       dump($nowPlayingMovies );
+    //    dump($nowPlayingMovies );
 
 
         return view('index',[
@@ -77,7 +77,7 @@ class MoviesController extends Controller
         ->get('https://api.themoviedb.org/3/movie/'.$id.'?append_to_response=credits,videos,images')
         ->json() ;
        
-        dump($movie);
+        // dump($movie);
         return view('show',[
             'movie' => $movie
         ]);
