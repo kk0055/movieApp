@@ -31,11 +31,11 @@
 <input type="text" class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1" placeholder="Search">
 </div>
   {{-- <livewire:search-dropdown> --}}
-  <div class="md:ml-4 mt-3 md:mt-0">
+  {{-- <div class="md:ml-4 mt-3 md:mt-0">
       <a href="#">
           <img src="/img/avatar.jpg" alt="avatar" class="rounded-full w-8 h-8">
       </a>
-  </div>
+  </div> --}}
 </div>
     </div>
      </nav>
