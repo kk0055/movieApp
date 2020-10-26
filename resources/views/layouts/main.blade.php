@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Movie">
+  <meta property="og:description" content="Movie">
+  <meta name="description" content="fin Movies" />
+
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MovieApp</title>
   <link rel="stylesheet" href="/css/main.css">
@@ -21,11 +25,16 @@
   <li class="md:ml-6 mt-3 md:mt-0">
     <a href="" class="hover:text-gray-300">Movies</a>
 </li>
+
+<li class="md:ml-6 mt-3 md:mt-0">
+  <a href="" class="hover:text-gray-300">Genres</a>
+</li>
+
 <li class="md:ml-6 mt-3 md:mt-0">
     <a href="" class="hover:text-gray-300">TV Shows</a>
 </li>
 <li class="md:ml-6 mt-3 md:mt-0">
-  <a href="" class="hover:text-gray-300">Actors</a>
+  <a href="{{ route('people.index') }}" class="hover:text-gray-300">Actors</a>
 </li>
 </ul>
 
