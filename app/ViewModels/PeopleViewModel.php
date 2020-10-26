@@ -28,7 +28,7 @@ class PeopleViewModel extends ViewModel
          )->implode(', '),
         ])->only([
             'name', 'id', 'profile_path', 'known_for',
-        ])->dump();
+        ]);
     });
 }
 
