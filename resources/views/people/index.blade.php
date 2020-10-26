@@ -8,11 +8,13 @@
           {{-- Foreach start --}}
           @foreach ($popularPeople as $people) 
            <div class="people mt-8">
-              {{-- <a href="{{ route('peoples.show', $people['id']) }}"> --}}
+              <a href="{{ route('people.show', $people['id']) }}">
+                
                   <img src="{{ $people['profile_path'] }}" alt="profile image" class="hover:opacity-75 transition ease-in-out duration-150">
               </a>
+              
               <div class="mt-2">
-                  {{-- <a href="{{ route('peoples.show', $people['id']) }}" class="text-lg hover:text-gray-300">{{ $people['name'] }}</a> --}}
+                  <a href="{{ route('people.show', $people['id']) }}" class="text-lg hover:text-gray-300">{{ $people['name'] }}</a>
                   {{ $people['name'] }}
                   <div class="text-sm truncate text-gray-400">{{ $people['known_for'] }}</div>
               </div>
@@ -21,17 +23,41 @@
     
       </div>
   </div> <!-- end pouplar-people -->
-<div class="flex justify-between mt-16">
+
+  <div class="page-load-status my-8">
+    <div class="flex justify-center">
+        <div class="infinite-scroll-request spinner my-8 text-4xl">&nbsp;</div>
+    </div>
+    <p class="infinite-scroll-last">End of content</p>
+    <p class="infinite-scroll-error">Error</p>
+</div>
+
+  {{-- パージネーション --}}
+{{-- <div class="flex justify-between mt-16">
   @if ($previous)
-  <a href="people/page/{{ $previous }}">Previous</a>   
+  <a href="/people/page/{{ $previous }}">Previous</a>   
+  @else
+  <div></div>
   @endif
   
   @if ($next)
-  <a href="people/page/{{ $next }}">Next</a>   
+  <a href="/people/page/{{ $next }}">Next</a>   
+  @else
+  <div></div>
    @endif
   
+</div> --}}
 </div>
-
-</div>
-
+@endsection
+@section('scripts')
+<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+<script>
+    var elem = document.querySelector('.grid');
+    var infScroll = new InfiniteScroll( elem, {
+      path: '/people/page/@{{#}}',
+      append: '.people',
+      status: '.page-load-status',
+      // history: false,
+    });
+</script>    
 @endsection

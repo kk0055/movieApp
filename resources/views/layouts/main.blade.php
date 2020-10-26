@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Movie">
   <meta property="og:description" content="Movie">
-  <meta name="description" content="fin Movies" />
+  <meta name="description" content="find Movies" />
 
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MovieApp</title>
@@ -18,12 +18,12 @@
     <div class="container mx-auto px-4 flex item-center justify-between px-4 py-6">
       <ul class="flex flex-col md:flex-row items-center">
   <li>
-    <a href="{{ route('movies.index') }}">
+    {{-- <a href="{{ route('movies.index') }}"> --}}
 <img src="https://image.freepik.com/free-vector/cute-siberian-husky-dog-paws-up-wall-cartoon_42750-520.jpg" class="rounded-full h-16 w-16" alt="homeimg">
-  </a>
+  {{-- </a> --}}
   </li>
   <li class="md:ml-6 mt-3 md:mt-0">
-    <a href="" class="hover:text-gray-300">Movies</a>
+    <a href="{{ route('movies.index') }}" class="hover:text-gray-300">Movies</a>
 </li>
 
 <li class="md:ml-6 mt-3 md:mt-0">
@@ -56,5 +56,6 @@
      </nav>
   @yield('content')
   <livewire:scripts />
+  @yield('scripts')
 </body>
 </html>

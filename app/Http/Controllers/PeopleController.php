@@ -15,6 +15,7 @@ class PeopleController extends Controller
 
     public function index($page = 1)
     {
+        abort_if($page > 500, 204);
         
         //APIの呼び出し.services.php→tmdb->token
         $popularPeople = Http::withToken(config('services.tmdb.token'))
@@ -58,7 +59,7 @@ class PeopleController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('people.show');
     }
 
     /**

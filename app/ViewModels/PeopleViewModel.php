@@ -20,7 +20,9 @@ class PeopleViewModel extends ViewModel
     return collect($this->popularPeople)->map(function($people) {
         return collect($people)->merge([
 
-     'profile_path' => $people['profile_path']
+            
+            
+        'profile_path' => $people['profile_path']
         ? 'https://image.tmdb.org/t/p/w235_and_h235_face'.$people['profile_path']
         : 'https://ui-avatars.com/api/?size=235&name='.$people['name'],
         'known_for' => collect($people['known_for'])->where('media_type', 'movie')->pluck('title')->union(
