@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\ViewModels\PeopleViewModel;
+use App\ViewModels\PersonViewModel;
 class PeopleController extends Controller
 {
     /**
@@ -24,13 +25,43 @@ class PeopleController extends Controller
 
          $viewModel = new PeopleViewModel($popularPeople,$page);       
 
-         
+        
         //  dump($popularPeople );
         return view('people.index',$viewModel 
             );
     }
   
+
+
     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        $person = Http::withToken(config('services.tmdb.token'))
+        ->get('https://api.themoviedb.org/3/person/'.$id)
+        ->json() ;
+       
+        // dd($person);
+
+        $social = Http::withToken(config('services.tmdb.token'))
+        ->get('https://api.themoviedb.org/3/person/'.$id.'/external_ids')
+        ->json() ;
+
+        $credits = Http::withToken(config('services.tmdb.token'))
+        ->get('https://api.themoviedb.org/3/person/'.$id.'/combined_credits')
+        ->json() ;
+      
+        $viewModel = new PersonViewModel($person,$social,$credits);
+
+    //    dd($credits);
+        return view('people.show', $viewModel );
+    }
+
+        /**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -50,17 +81,7 @@ class PeopleController extends Controller
     {
         //
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-        return view('people.show');
-    }
+    
 
     /**
      * Show the form for editing the specified resource.

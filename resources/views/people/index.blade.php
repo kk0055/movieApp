@@ -15,7 +15,7 @@
               
               <div class="mt-2">
                   <a href="{{ route('people.show', $people['id']) }}" class="text-lg hover:text-gray-300">{{ $people['name'] }}</a>
-                  {{ $people['name'] }}
+                  
                   <div class="text-sm truncate text-gray-400">{{ $people['known_for'] }}</div>
               </div>
           </div>

@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MovieApp</title>
   <link rel="stylesheet" href="/css/main.css">
+  
   <livewire:styles />
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
