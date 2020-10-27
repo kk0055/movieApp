@@ -1,4 +1,4 @@
-{{-- テンプレートとして使える --}}
+{{-- テンプレートとして使える [app\view\Components]--}}
    
    <div class="mt-8">
         <a href="{{ route('movies.show',$movie['id']) }}">

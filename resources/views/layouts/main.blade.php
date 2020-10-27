@@ -19,20 +19,20 @@
     <div class="container mx-auto px-4 flex item-center justify-between px-4 py-6">
       <ul class="flex flex-col md:flex-row items-center">
   <li>
-    {{-- <a href="{{ route('movies.index') }}"> --}}
-<img src="https://image.freepik.com/free-vector/cute-siberian-husky-dog-paws-up-wall-cartoon_42750-520.jpg" class="rounded-full h-16 w-16" alt="homeimg">
-  {{-- </a> --}}
+    <a href="{{ route('movies.index') }}">
+<img src="https://image.flaticon.com/icons/png/512/184/184578.png" class="rounded-full h-16 w-16" alt="homeimg">
+  </a>
   </li>
   <li class="md:ml-6 mt-3 md:mt-0">
     <a href="{{ route('movies.index') }}" class="hover:text-gray-300">Movies</a>
 </li>
 
-<li class="md:ml-6 mt-3 md:mt-0">
+{{-- <li class="md:ml-6 mt-3 md:mt-0">
   <a href="" class="hover:text-gray-300">Genres</a>
-</li>
+</li> --}}
 
 <li class="md:ml-6 mt-3 md:mt-0">
-    <a href="" class="hover:text-gray-300">TV Shows</a>
+    <a href="{{ route('tv.index') }}" class="hover:text-gray-300">TV Shows</a>
 </li>
 <li class="md:ml-6 mt-3 md:mt-0">
   <a href="{{ route('people.index') }}" class="hover:text-gray-300">Actors</a>

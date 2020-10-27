@@ -22,8 +22,6 @@ class MoviesController extends Controller
 
         $voteAverage = collect($popularMovies )->sortByDesc('vote_average');
 
-    
-
         $nowPlayingMovies = Http::withToken(config('services.tmdb.token'))
         ->get('https://api.themoviedb.org/3/movie/now_playing')
         ->json()['results'] ;
