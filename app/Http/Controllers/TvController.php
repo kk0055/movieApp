@@ -31,7 +31,7 @@ class TvController extends Controller
 
         $viewModel = new TvViewModel($popularTv,$topRatedTv,$genresArray);       
 
-        return view('tv.index',$viewModel);
+        return view('tvs.index',$viewModel);
     }
 
        /**
@@ -48,7 +48,7 @@ class TvController extends Controller
        
         $viewModel = new TvShowViewModel( $tvshow); 
 
-        return view('tv.show', $viewModel);
+        return view('tvs.show', $viewModel);
       
     }
 
