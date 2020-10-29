@@ -21,7 +21,7 @@
                   {{ $genres->get($genre) }}
                 
               @endforeach
-              <div class="line-it-button mx-5" data-lang="ja" data-type="like" data-url="http://limitless-dusk-88508.herokuapp.com/" data-share="true" style="display: none;"></div>
+            
             </div>
         </div>
       </div>
