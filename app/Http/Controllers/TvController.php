@@ -30,7 +30,7 @@ class TvController extends Controller
         ->json()['genres'] ;
 
         $viewModel = new TvViewModel($popularTv,$topRatedTv,$genresArray);       
-
+//
         return view('tv.index',$viewModel);
     }
 
