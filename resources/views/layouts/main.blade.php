@@ -15,8 +15,8 @@
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 <body class="font-sans bg-black text-white ">
-  <nav class="border-b border-gray-900">
-    <div class="container mx-auto px-4 flex item-center justify-between px-4 py-6">
+  <nav class="hidden md:block border-b border-gray-900">
+    <div class="container mx-auto px-4 flex item-center justify-between  py-6">
       <ul class="flex flex-col md:flex-row items-center">
   <li>
     <a href="{{ route('movies.index') }}">
@@ -59,6 +59,7 @@
 
     </div>
      </nav>
+    
   @yield('content')
   <livewire:scripts />
   @yield('scripts')
