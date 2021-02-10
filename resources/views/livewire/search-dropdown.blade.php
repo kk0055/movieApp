@@ -39,7 +39,7 @@
                     
                         <li class="border-b border-gray-700 ">
                             <a
-                                href="{{ route('tv.show', $result['id']) }}" class="block hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
+                                href="{{ route('tv.show', $result['id']) }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
                                 @if ($loop->last) @keydown.tab="isOpen = false" @endif
                             >
                             @if ($result['poster_path'])
