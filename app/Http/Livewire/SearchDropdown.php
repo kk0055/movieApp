@@ -19,7 +19,7 @@ class SearchDropdown extends Component
 
             //searchされた文字を含む結果をGet
             $searchResults = Http::withToken(config('services.tmdb.token'))
-            ->get('https://api.themoviedb.org/3/search/movie?query='.$this->search)
+            ->get('https://api.themoviedb.org/3/search/tv?query='.$this->search)
             ->json()['results'] ;
          }
        

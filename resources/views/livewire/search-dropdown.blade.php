@@ -39,7 +39,7 @@
                     
                         <li class="border-b border-gray-700 ">
                             <a
-                                href="{{ route('movies.show', $result['id']) }}" class="block hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
+                                href="{{ route('tv.show', $result['id']) }}" class="block hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
                                 @if ($loop->last) @keydown.tab="isOpen = false" @endif
                             >
                             @if ($result['poster_path'])
@@ -47,7 +47,7 @@
                             @else
                                 <img src="https://via.placeholder.com/50x75" alt="poster" class="w-8">
                             @endif
-                            <span class="ml-4">{{ $result['title'] }}</span>
+                            <span class="ml-4">{{ $result['name'] }}</span>
                         </a>
                         </li>
                     @endforeach

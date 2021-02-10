@@ -23,6 +23,10 @@
 <img src="https://image.flaticon.com/icons/png/512/184/184578.png" class="rounded-full h-16 w-16" alt="homeimg">
   </a>
   </li>
+  <a href="{{ route('korean.index') }}" class="hover:text-gray-300">My favorite</a>
+</li>
+
+
   <li class="md:ml-6 mt-3 md:mt-0">
     <a href="{{ route('movies.index') }}" class="hover:text-gray-300">Movies</a>
 </li>
