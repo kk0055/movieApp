@@ -22,4 +22,7 @@ href="{{ route('tv.show', '79434') }}" class=" hover:bg-gray-700 px-3 py-3 flex 
 href="{{ route('tv.show', '92983') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >Vagabond</a>
 
+<a
+href="{{ route('tv.show', '3215-1') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
+>コーヒープリンス一号店</a>
 @endsection
