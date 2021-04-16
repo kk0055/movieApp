@@ -17,4 +17,9 @@ href="{{ route('tv.show', '80741') }}" class=" hover:bg-gray-700 px-3 py-3 flex 
 <a
 href="{{ route('tv.show', '79434') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >キム秘書はいったい、なぜ?</a>
+
+<a
+href="{{ route('tv.show', '92983') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
+>Vagabond</a>
+
 @endsection
