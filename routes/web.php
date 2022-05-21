@@ -19,4 +19,4 @@ Route::get('/people/{id}',[PeopleController::class,'show'] )->name('people.show'
 Route::get('/tv',[TvController::class,'index'] )->name('tv.index');
 Route::get('/tv/{id}',[TvController::class,'show'] )->name('tv.show');
 
-Route::get('/favorite',[KoreanController::class,'index'] )->name('korean.index');
+Route::get('/korean',[KoreanController::class,'index'] )->name('korean.index');

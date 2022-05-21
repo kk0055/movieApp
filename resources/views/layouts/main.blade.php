@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Movie">
+    <meta property="og:title" content="😍韓国ドラマ😍">
     <meta property="og:description" content="Movie">
-    <meta name="description" content="find Movies" />
+    <meta name="description" content="😍韓国ドラマ😍" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>MovieApp</title>
+    <title>😍韓国ドラマ😍</title>
     <link rel="stylesheet" href="/css/main.css">
 
     <livewire:styles />
@@ -21,45 +21,10 @@
         <div class="container mx-auto px-4 flex item-center justify-between  py-6">
             <ul class="flex flex-col md:flex-row ">
                 <li class="md:mr-6 mt-3 md:mt-0">
-                    <a href="{{ route('movies.index') }}">
-                        Home
-                    </a>
-                </li>
-                <li class="md:mr-6 mt-3 md:mt-0">
-                <a href="{{ route('korean.index') }}" class="hover:text-gray-300">韓国ドラマ</a>
-                </li>
-
-
-                <li class="md:ml-6 mt-3 md:mt-0">
-                    <a href="{{ route('movies.index') }}" class="hover:text-gray-300">Movies</a>
-                </li>
-
-                {{-- <li class="md:ml-6 mt-3 md:mt-0">
-  <a href="" class="hover:text-gray-300">Genres</a>
-</li> --}}
-
-                <li class="md:ml-6 mt-3 md:mt-0">
-                    <a href="{{ route('tv.index') }}" class="hover:text-gray-300">TV Shows</a>
-                </li>
-                <li class="md:ml-6 mt-3 md:mt-0">
-                    <a href="{{ route('people.index') }}" class="hover:text-gray-300">Actors</a>
+                <a href="{{ route('korean.index') }}" class="hover:text-gray-300">😍韓国ドラマ😍</a>
                 </li>
             </ul>
-
             <livewire:search-dropdown>
-                {{-- <div class="flex flex-col md:flex-row items-center">
-  <div class="relative">
-<input type="text" class="bg-gray-800 rounded-full w-64 px-4 pl-8 py-1" placeholder="Search">
-</div> 
-
- 
-  <div class="md:ml-4 mt-3 md:mt-0">
-      <a href="#">
-          <img src="/img/avatar.jpg" alt="avatar" class="rounded-full w-8 h-8">
-      </a>
-  </div>
-</div> --}}
-
         </div>
     </nav>
 
