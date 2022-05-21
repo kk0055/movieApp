@@ -1,10 +1,11 @@
 @extends('layouts.main')
 
 @section('content')
-
-<a
+<div class="">
+  <a
 href="{{ route('tv.show', '94796') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >😍愛の不時着😍</a>
+
 
 <a
 href="{{ route('tv.show', '96162') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
@@ -15,6 +16,9 @@ href="{{ route('tv.show', '78385') }}" class=" hover:bg-gray-700 px-3 py-3 flex 
 <a
 href="{{ route('tv.show', '67915') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >😍トッケビ😍</a>
+<a
+href="{{ route('tv.show', '154825') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
+>😍社内お見合い😍</a>
 <a
 href="{{ route('tv.show', '63767') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >😍彼女はキレイだった😍</a>
@@ -36,4 +40,5 @@ href="{{ route('tv.show', '92983') }}" class=" hover:bg-gray-700 px-3 py-3 flex 
 <a
 href="{{ route('tv.show', '3215-1') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >😍コーヒープリンス一号店😍</a>
+</div>
 @endsection
