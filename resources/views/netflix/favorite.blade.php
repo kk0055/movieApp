@@ -13,6 +13,12 @@ href="{{ route('tv.show', '96162') }}" class=" hover:bg-gray-700 px-3 py-3 flex 
 href="{{ route('tv.show', '78385') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >😍よくおごってくれる綺麗なお姉さん😍</a>
 <a
+href="{{ route('tv.show', '67915') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
+>😍トッケビ😍</a>
+<a
+href="{{ route('tv.show', '63767') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
+>😍彼女はキレイだった😍</a>
+<a
 href="{{ route('tv.show', '126035') }}" class=" hover:bg-gray-700 px-3 py-3 flex items-center transition ease-in-out duration-150"
 >😍わかっていても😍</a>
 <a
