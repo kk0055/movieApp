@@ -14,6 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 <livewire:styles />
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+{{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
 </head>
 
 <body class="font-sans bg-black text-white ">
