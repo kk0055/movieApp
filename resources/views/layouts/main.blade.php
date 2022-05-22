@@ -14,6 +14,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 <livewire:styles />
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+@livewireStyles
 </head>
 
 <body class="font-sans bg-black text-white ">
@@ -30,6 +31,7 @@
 
     @yield('content')
     <livewire:scripts />
+    @livewireScripts
     @yield('scripts')
     <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
     </script>
