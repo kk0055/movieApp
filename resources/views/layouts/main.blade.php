@@ -12,7 +12,8 @@
     <title>😍韓国ドラマ😍</title>
     <link rel="stylesheet" href="/css/main.css">
     <script src="https://cdn.tailwindcss.com"></script>
-<livewire:styles />
+{{-- <livewire:styles /> --}}
+@livewireStyles
 <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 {{-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script> --}}
 </head>
@@ -25,12 +26,14 @@
                     <a href="{{ route('korean.index') }}" class="hover:text-gray-300">😍韓国ドラマ😍</a>
                 </li>
             </ul>
-            <livewire:search-dropdown>
+            {{-- <livewire:search-dropdown> --}}
+              @livewire('search-dropdown')
         </div>
     </nav>
 
     @yield('content')
-    <livewire:scripts />
+    {{-- <livewire:scripts /> --}}
+    @livewireScripts
     @yield('scripts')
     <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer">
     </script>
