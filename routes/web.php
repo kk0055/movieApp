@@ -7,6 +7,8 @@ use App\Http\Controllers\TvController;
 use App\Http\Controllers\KoreanController;
 
 // Route::get('/',[MoviesController::class,'index'] )->name('movies.index');
+Route::get('/',[KoreanController::class,'index'] )->name('korean.index');
+
 Route::get('/movies/{id}',[MoviesController::class,'show'] )->name('movies.show');
 Route::get('/genres',[MoviesController::class,'genresIndex'] )->name('movies.genre');
 
@@ -19,4 +21,3 @@ Route::get('/people/{id}',[PeopleController::class,'show'] )->name('people.show'
 Route::get('/tv',[TvController::class,'index'] )->name('tv.index');
 Route::get('/tv/{id}',[TvController::class,'show'] )->name('tv.show');
 
-Route::get('/',[KoreanController::class,'index'] )->name('korean.index');
