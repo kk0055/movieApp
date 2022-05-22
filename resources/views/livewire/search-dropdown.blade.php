@@ -29,7 +29,7 @@
 
     @if (strlen($search) >= 2)
         <div
-            class="z-50 absolute bg-gray-800 text-sm rounded w-64 mt-4 "
+            class="z-50 absolute bg-gray-800 text-sm rounded w-64 mt-4 mr-5"
             x-show.transition.opacity="isOpen"
         >
       
