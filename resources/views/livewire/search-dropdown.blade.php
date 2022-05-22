@@ -2,7 +2,7 @@
     <input
         wire:model.debounce.500ms="search"
         type="text"
-        class="bg-gray-800 text-sm rounded-full w-64 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline " placeholder="Search "
+        class="bg-gray-800 text-sm rounded-full w-45 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline " placeholder="Search "
         x-ref="search"
         @keydown.window="
         {{-- /押したときにsearchにfocus. alpine.js--}}

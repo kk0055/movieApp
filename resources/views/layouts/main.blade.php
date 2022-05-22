@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="😍韓国ドラマ😍">
-    <meta property="og:description" content="Movie">
+    <meta property="og:description" content="Naega joa hanun geon neoya">
     <meta name="description" content="😍韓国ドラマ😍" />
 
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
