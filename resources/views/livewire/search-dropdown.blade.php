@@ -1,8 +1,8 @@
-<div class="relative mt-3 md:mt-0" x-data="{ isOpen: true }" @click.away="isOpen = false">
+<div class="relative mt-3 ml-2 md:mt-0" x-data="{ isOpen: true }" @click.away="isOpen = false">
     <input
         wire:model.debounce.500ms="search"
         type="text"
-        class="bg-gray-800 text-sm rounded-full w-45 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline " placeholder="Search "
+        class="bg-gray-800 text-sm rounded-full w-40 px-4 pl-8 py-1 focus:outline-none focus:shadow-outline " placeholder="Search "
         x-ref="search"
         @keydown.window="
         {{-- /押したときにsearchにfocus. alpine.js--}}
